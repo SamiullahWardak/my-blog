@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>My blog</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1"/>
+   <style type="text/css">
+     body {
+       background-color:teal;
+     }
+     p {
+       color:#173459;
+     }
+     h1 {
+       color:lightblue;
+       text-shadow: 2px 3px 4px navy;
+       letter-spacing:1px;
+     }
+     h4 {
+       background-color: #173459;
+       color: lightblue;
+     }
+     h3 {
+       background-color: maroon;
+       text-shadow:4px 4px 4px aqua;
+       text-align:center;
+       color: lime;
+     }
+     table, hr, td, th{
+       border:1px solid black;
+       border-collapse:collapse;
+     }
+     #btn {
+       background-color: orange;
+       box-shadow: 6px 7px 5px #421230;
+       padding: 5px;
+       font-size: 20px;
+       font-weight: bold;
+       border-radius: 0px 10px;
+     }
+     .selected {
+       box-shadow: 6px 7px 5px #421230;
+       padding: 5px;
+       font-size: 20px;
+       font-weight: bold;
+       border: 1px dashed red;
+       border-radius: 0px 8px;
+     }
+   </style>
+  <script src="blloog.js"> </script>
+</head>
+<body>
+   <h1>My first project</h1>
+   <h4>About me</h4>
+   <p>Hey! I'm <i><b>SAMIULLAH Wardak</b></i>. Coding has changed my world...
+   </p>
+   <img src="images/sami.jpg" width="250px" hieght="250px" alt="Can't load the image"/>
+      <br /><hr />
+   <h4>The link on which you can learn programming</h4>
+   <a href="http://www.sololearn.com" target="_blank">Learning with Solo Learn</a> <hr />
+   <h4>My Skills</h4>
+      <ul style="margin-left: 20px">
+         <li>C</li>
+         <li>C++</li>
+         <li>Java</li>
+         <li>SQL</li>
+         <li>Android App Development</li>
+         <li>HTML</li>
+      </ul> <hr />
+   <h4>My Time Table</h4>
+   <table id="btn">
+     <tr>
+       <th>Day/Time</th>
+       <th>Mon</th>
+       <th>Tue</th>
+       <th>Wed</th>
+       <th>Thu</th>
+       <th>Fri</th>
+     </tr>
+     <tr>
+       <td>8-1:30</td>
+       <td>Learn</td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+     </tr>
+     <tr>
+       <td>2-4:45</td>
+       <td></td>
+       <td>Practice</td>
+       <td></td>
+       <td></td>
+       <td></td>
+     </tr>
+     <tr>
+       <td>5-6:30</td>
+       <td></td>
+       <td></td>
+       <td>Play</td>
+       <td></td>
+       <td></td>
+     </tr>
+     <tr>
+       <td>7:30-10</td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td>Code</td>
+       <td></td>
+     </tr>
+     <tr>
+       <td>10-5:25</td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td>Discuss</td>
+     </tr>
+   </table><hr />
+   <h4>Fill the form</h4>
+   <form>
+   <div id="btn">
+     User Name: <input type="text" name="username" placeholder="Enter your full name"/> </br>
+     Password: <input type="password" name="password" placeholder="Enter a strong password"/> </br>
+     <input type="radio" name="gender"/>Male
+     <input type="radio" name="gender"/>Female
+   </div>
+   </form> <hr />
+   <div>
+     <h4>My Media</h4>
+     <iframe height="150" width="350" src="https://www.youtube.com/embed/Q6_5InVJZ88" allowfullscreen frameborder="0">
+   </iframe>
+   </div> <hr />
+   <h4>Song</h4>
+   <audio src="f_song.mp3" controls>
+   </audio>
+   <h4>Er_tugrul Sad</h4>
+   <audio controls loop>
+     <source src="sad.mp3" type="audio/mpeg"/>
+   </audio> <hr />
+   <h4>Progress bar</h4>
+   <progress max="100" min="0" value="77">
+   </progress> <hr />
+   <h4>Discription List</h4>
+   <dl>
+     <dt>C Language:</dt>
+     <dd>Is a procedural & non Object Oriented language.</dd>
+
+     <dt>C++ Language:</dt>
+     <dd>Is an Object Oriented & class based language.</dd>
+
+     <dt>Java Language:</dt>
+     <dd>Is an Object Oriented & very rubost language.</dd>
+   </dl> <hr />
+   <h4>My name can be accessed on the button</h4>
+   <button id="btn" onclick="me()">My name</button> <hr/>
+   
+   <h4>Range input</h4>
+   <input type="Range" id="rng" />
+   <button id="btn" onclick="getRange()">Range Value</button> <br/> <hr/>
+   <h4>Text area</h4>
+   <textarea class="selected" placeholder="You can write your message here..."></textarea> <hr/>
+   <h4>This is a search box</h4>
+   <input type="Search" placeholder="Search here" id="srch" class="selected" list="words"/>
+     <datalist id="words">
+       <option value="Apply">      <option value="Ant">       <option value="Base">       <option value="Banana">       <option value="Case">
+       <option value="Capital">    <option value="Description">       <option value="Dream">       <option value="Easy">       <option value="Ear">
+       <option value="Favourite">  <option value="Genius">       <option value="Happy">       <option value="Identify">       <option value="Journey">
+       <option value="Keen">       <option value="Local">       <option value="Meeting">       <option value="Natural">       <option value="Over">
+       <option value="Practice">   <option value="Quality">       <option value="Receive">       <option value="Same">       <option value="Twice">
+       <option value="Underline">  <option value="Vector">       <option value="Website">      <option value="Xerox">       <option value="Zip">
+       <option value="Year">
+     </datalist>
+   <button id="btn" onclick="getSearch()">Get your search</button> <hr />
+   <h4> Which one is your favorite department in Computer Science?</h4>
+   <select id="fclt" class="selected">
+     <option value="Network"> Network </option>
+     <option value="Software Engineering"> Saftware Engineering </option>
+     <option value="Database"> Database </option>
+     <option value="Information Technology"> Information Technology </option>
+   </select>
+   <button id="btn" onclick="dropFaculty()"> Get your department </button> <hr />
+   <h4>Circle shape</h4>
+   <svg width="200" height="130">
+     <circle cx="80" cy="80" r="50" fill="orange">
+     </circle> <br/>
+   </svg> <hr />
+   <h4>Rectangle shape</h4>
+   <svg width="300" height="60">
+     <rect width="130" height="40" fill="orange" >
+       <animate attributeName="x" from="15" to="285" dur="2s" fill="remove" repeatCount="10" />
+     <rect/>
+   </svg> <hr />
+   <svg width="500" height="210">
+     <path d="M0 0 L200 0 L200 200 L0 200 Z" style="stroke:yellow; fill:None;">
+   </svg> <hr />
+  <button id="btn" onClick="satisfication()">Satisfication</button> <hr />
+  
+  <script type="text/javascript">
+    function me(){
+      alert("Hi, I'm Samoon Wardak.");
+    }
+      setInterval(me, 1000000);
+    function getRange(){
+      alert(document.getElementById('rng').value);
+    }
+    function getSearch(){
+      alert(document.getElementById('srch').value);
+    }
+    function dropFaculty(){
+      alert(document.getElementById("fclt").value);
+    }
+    function satisfication(){
+      var result = confirm("Do you really want to leave this page?");
+      if(result == true) {
+        alert("Thanks for visiting");
+      }
+      else{
+        alert("Thanks for staying with us");
+      }
+    }
+  </script>
+</body>
+<footer>
+  <h1 style="text-align:right">2021/December</h1>
+</footer>
+</html>
